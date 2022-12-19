@@ -42,27 +42,27 @@ int main() {
     int streetNumberInt;
 
     // input
-    std::cout << "full name: ";
+    std::cout << "Enter your full name: : ";
     getline(std::cin, fullName);
-    std::cout << "question: ";
+    std::cout << "Do you live in an apartment? (y/n): ";
     getline(std::cin, question);
     std::for_each(question.begin(), question.end(),
     [](char& c) { c = ::toupper(c); });
     if (question == "Y" || question == "YES") {
-        std::cout << "apartment number: ";
+        std::cout << "Enter your apartment number: ";
         getline(std::cin, apartmentNumber);
     } else {
         apartmentNumberInt = 0;
     }
-    std::cout << "street number: ";
+    std::cout << "Enter your street number: ";
     getline(std::cin, streetNumber);
-    std::cout << "street name: ";
+    std::cout << "Enter your street name and type (Main St, Express pkwy...): ";
     getline(std::cin, streetName);
-    std::cout << "city: ";
+    std::cout << "Enter your city: ";
     getline(std::cin, city);
-    std::cout << "province: ";
+    std::cout << "Enter your province (as an abbreviation, ex: ON, BC...): ";
     getline(std::cin, province);
-    std::cout << "postal code: ";
+    std::cout << "Enter your postal code (123 456): ";
     getline(std::cin, postalCode);
     std::cout << "\n";
 
